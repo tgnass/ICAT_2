@@ -1,3 +1,6 @@
+
+import java.util.Objects;
+
 public class Player {
     private int id;
     private String name;
@@ -31,6 +34,38 @@ public class Player {
 
     public void setGame(String game) {
         this.game = game;
+    }
+
+    @Override
+    public String toString() {
+        return "Player{" + "id=" + id + ", name=" + name + ", game=" + game + '}';
+    }
+
+    @Override
+    public int hashCode() {
+        int hash = 5;
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Player other = (Player) obj;
+        if (this.id != other.id) {
+            return false;
+        }
+        if (!Objects.equals(this.name, other.name)) {
+            return false;
+        }
+        if (!Objects.equals(this.game, other.game)) {
+            return false;
+        }
+        return true;
     }
     
     
