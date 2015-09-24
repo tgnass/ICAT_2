@@ -13,6 +13,11 @@ public class PlayerLinkedList extends ShellLinkedList {
     }
     
     public Player peek(int searchId) throws DataStructureException {
+        while(super.head.getPlayer() != null) {
+            
+            
+        } 
+        
         return super.head.getPlayer();
     }
 }
