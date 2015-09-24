@@ -2,9 +2,9 @@ public abstract class ShellLinkedList {
     protected PlayerNode head;
     protected int numberOfItems;
 
-    public ShellLinkedList(PlayerNode head, int numberOfItems) {
-        this.head = head;
-        this.numberOfItems = numberOfItems;
+    public ShellLinkedList() {
+        this.head.setNext(null);
+        this.numberOfItems = 0;
     }
 
     public int getNumberOfItems() {
@@ -12,8 +12,7 @@ public abstract class ShellLinkedList {
     }
     
     public boolean isEmpty() {
-        
-        return numberOfItems > 0;
+        return numberOfItems != 0;
     }   
 
     @Override

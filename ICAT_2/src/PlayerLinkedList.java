@@ -1,18 +1,19 @@
 public class PlayerLinkedList extends ShellLinkedList {
 
-    public PlayerLinkedList(PlayerNode head, int numberOfItems) 
+    public PlayerLinkedList() 
     {
-        super(head, numberOfItems);
+        super();
     }
     
-    public void insert(Player p) 
-    {
-        
+    public void insert(Player p) {
+        super.head.setPlayer(p);         
     }
     
-    public Player delete(int searchId) 
-    {
-        
+    public Player delete(int searchId) throws DataStructureException {
+        return super.head.getPlayer();
+    }
+    
+    public Player peek(int searchId) throws DataStructureException {
         return super.head.getPlayer();
     }
 }
