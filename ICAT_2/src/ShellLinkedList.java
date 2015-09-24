@@ -19,6 +19,4 @@ public abstract class ShellLinkedList {
     public String toString() {
         return "ShellLinkedList{" + "head=" + head + ", numberOfItems=" + numberOfItems + '}';
     }
-    
-    
 }

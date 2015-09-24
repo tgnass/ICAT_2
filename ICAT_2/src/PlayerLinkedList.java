@@ -1,7 +1,6 @@
 public class PlayerLinkedList extends ShellLinkedList {
 
-    public PlayerLinkedList() 
-    {
+    public PlayerLinkedList() {
         super();
     }
     
