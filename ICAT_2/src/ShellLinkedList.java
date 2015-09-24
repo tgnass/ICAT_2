@@ -6,7 +6,7 @@ public abstract class ShellLinkedList {
         this.head.setNext(null);
         this.numberOfItems = 0;
     }
-
+   
     public int getNumberOfItems() {
         return numberOfItems;
     }
