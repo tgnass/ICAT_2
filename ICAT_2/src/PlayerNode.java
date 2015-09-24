@@ -18,6 +18,7 @@ public class PlayerNode
     {
         this.player = player;
         this.next = next;
+        
     }
 
     public Player getPlayer() 

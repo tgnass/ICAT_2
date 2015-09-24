@@ -16,3 +16,4 @@ public class PlayerLinkedList extends ShellLinkedList {
         return super.head.getPlayer();
     }
 }
+
