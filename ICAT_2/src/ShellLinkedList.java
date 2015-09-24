@@ -1,13 +1,25 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+public abstract class ShellLinkedList {
+    protected PlayerNode head;
+    protected int numberOfItems;
 
-/**
- *
- * @author tgnas_000
- */
-public class ShellLinkedList {
+    public ShellLinkedList(PlayerNode head, int numberOfItems) {
+        this.head = head;
+        this.numberOfItems = numberOfItems;
+    }
+
+    public int getNumberOfItems() {
+        return numberOfItems;
+    }
+    
+    public boolean isEmpty() {
+        
+        return numberOfItems > 0;
+    }   
+
+    @Override
+    public String toString() {
+        return "ShellLinkedList{" + "head=" + head + ", numberOfItems=" + numberOfItems + '}';
+    }
+    
     
 }
